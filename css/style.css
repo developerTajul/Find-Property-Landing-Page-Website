@@ -321,14 +321,14 @@ select, textarea {
   appearance: none;
   border: 0 !important;
   width: 100% !important;
-  color: #999999 !important;
+  color: #BCBCBC !important;
   box-shadow: none !important;
   font-size: 18px !important;
   font-weight: 400 !important;
   box-shadow: none !important;
   line-height: 30px !important;
   background: #FFF !important;
-  padding: 15px 19px !important;
+  padding: 13px 19px !important;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
@@ -369,7 +369,7 @@ select, textarea {
   input[type="password"]::-webkit-input-placeholder,
   input[type="file"]::-webkit-input-placeholder,
   select::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-    color: #999999;
+    color: #BCBCBC;
     font-size: 17px;
     font-line: 26px;
     font-weight: 400;
@@ -382,7 +382,7 @@ select, textarea {
   input[type="password"]::-moz-placeholder,
   input[type="file"]::-moz-placeholder,
   select::-moz-placeholder, textarea::-moz-placeholder {
-    color: #999999;
+    color: #BCBCBC;
     font-size: 17px;
     font-line: 26px;
     font-weight: 400;
@@ -395,7 +395,7 @@ select, textarea {
   input[type="password"]:-ms-input-placeholder,
   input[type="file"]:-ms-input-placeholder,
   select:-ms-input-placeholder, textarea:-ms-input-placeholder {
-    color: #999999;
+    color: #BCBCBC;
     font-size: 17px;
     font-line: 26px;
     font-weight: 400;
@@ -408,7 +408,7 @@ select, textarea {
   input[type="password"]:-moz-placeholder,
   input[type="file"]:-moz-placeholder,
   select:-moz-placeholder, textarea:-moz-placeholder {
-    color: #999999;
+    color: #BCBCBC;
     font-size: 17px;
     font-line: 26px;
     font-weight: 400;
@@ -993,6 +993,46 @@ select, textarea {
     font-weight: 700; }
     .highest-area__list ul li i {
       margin-right: 10px; }
+
+.cta-area {
+  background-color: #F7FBFE; }
+  .cta-area__wrapper {
+    gap: 30px; }
+    .cta-area__wrapper .text {
+      max-width: 579px; }
+      @media screen and (max-width: 767px) {
+        .cta-area__wrapper .text {
+          max-width: 100%; } }
+    @media screen and (max-width: 767px) {
+      .cta-area__wrapper .form {
+        width: 100%; } }
+    .cta-area__wrapper .form-group {
+      width: 381px;
+      max-width: 100%;
+      position: relative;
+      box-shadow: 0px 4px 9px 0px #0000003b; }
+      @media screen and (max-width: 900px) {
+        .cta-area__wrapper .form-group {
+          width: 311px; } }
+      @media screen and (max-width: 767px) {
+        .cta-area__wrapper .form-group {
+          width: 100%; } }
+      .cta-area__wrapper .form-group input[type="email"] {
+        padding-right: 145px !important; }
+        @media screen and (max-width: 991px) {
+          .cta-area__wrapper .form-group input[type="email"] {
+            padding-right: 85px !important; } }
+      .cta-area__wrapper .form-group input[type="submit"], .cta-area__wrapper .form-group .theme-btn {
+        right: 0;
+        position: absolute;
+        top: calc(50% - 28px);
+        background-color: #FF504A;
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 26px;
+        padding: 15px 25px; }
+        .cta-area__wrapper .form-group input[type="submit"] i, .cta-area__wrapper .form-group .theme-btn i {
+          margin: 0; }
 
 .theme-btn {
   color: #FFF;
