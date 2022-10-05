@@ -11,19 +11,9 @@
 2. header
 3. slider-area
 */
-@import 'variable';
+
 @import 'common';
 @import 'header';
-@import 'slider';
-@import 'heading';
-@import 'about-us';
-@import 'contact';
-@import 'services';
-@import 'portfolio';
-@import 'counter';
-@import 'member';
-@import 'promotion';
-@import 'latest-blog';
-@import 'feature';
-@import 'widgets';
+@import './hero';
 @import 'footer';
+@import './button';

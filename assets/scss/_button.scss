@@ -1,0 +1,22 @@
+.theme-btn {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 600;
+    line-height: 24px;
+    padding: 16px 45px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    transition: all ease-in-out 0.4s;
+}
+
+.theme-btn-dark {
+    background: #333333;
+    color: #fff;
+
+    &:hover {
+        background: #fff;
+        color: #333333;
+        border-color: #333333;
+    }
+}
