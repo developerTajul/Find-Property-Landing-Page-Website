@@ -108,39 +108,23 @@
 		});
     	/*** slick slider  */
 		$('.client-slider').slick();
-		
-        // testimonial-active 
-        var testimonials__slider;
-        testimonials__slider = $('.testimonial-area__slider');
 
-        testimonials__slider.slick({
-            dots: true, 
-            speed: 300,
-            arrows: true,
-            autoplay: true,
-            slidesToShow: 3,
-            infinite: true,
-            slidesToScroll: 1,
-            autoplaySpeed: 500,
-            dotsClass: "slick-dots list-inline",
-            nextArrow: '<button class="slide-arrow prev-arrow fa-solid fa-arrow-right-long"></button>',
-            prevArrow: '<button class="slide-arrow next-arrow fa-solid fa-arrow-left-long"></button>',
-            appendDots: $(".slider-controls"),
-            responsive: [
-            {
-                breakpoint: 768,
-                settings: {
-                 slidesToShow: 2
-                }
-            },
-            {
-                breakpoint: 530,
-                settings: {
-                    slidesToShow: 1
-                }
-            }
-            ]
-        }); 
+		// Feature Property 
+		var grid = $('.grid').isotope({
+			itemSelector: '.grid-item',
+		})
+
+		$('.filter-button-group').on('click', 'button', function () {
+			var filterValue = $(this).attr('data-filter');
+			grid.isotope({ filter: filterValue });
+		});
+
+		//for portfolio menu active class
+		$('.filter-button-group button').on('click', function (event) {
+			$(this).siblings('.active').removeClass('active');
+			$(this).addClass('active');
+			event.preventDefault();
+		}); 
 
         /** counter **/
         $('.counter').counterUp({
