@@ -980,6 +980,20 @@ select, textarea {
       .feature-area__item .text .services ul li a:hover, .feature-area__item .text .services ul li a:focus {
         color: #0155D9; }
 
+@media all and (min-width: 768px) {
+  .highest-area__content .description {
+    max-width: 517px; } }
+.highest-area__content .description p + p {
+  margin-top: 15px; }
+.highest-area__list ul {
+  gap: 10px;
+  display: flex;
+  flex-direction: column; }
+  .highest-area__list ul li {
+    font-weight: 700; }
+    .highest-area__list ul li i {
+      margin-right: 10px; }
+
 .theme-btn {
   color: #FFF;
   font-size: 17px;
