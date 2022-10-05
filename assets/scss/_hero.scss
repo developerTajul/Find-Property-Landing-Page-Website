@@ -1,21 +1,20 @@
-.pt-190{
-    padding-top: 190px;
-}
-
-.hero-area{
+.hero-area {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    .hero-left-area{
-        .hero-title{
-            h1{
+
+    .hero-left-area {
+        .hero-title {
+            h1 {
                 text-decoration: underline;
             }
         }
     }
-    .right-img-area{
+
+    .right-img-area {
         position: relative;
-        .hero-card{
+
+        .hero-card {
             position: absolute;
             top: 70px;
             right: 50px;
@@ -23,8 +22,9 @@
             border-radius: 10px;
             width: fit-content;
             display: flex;
+            align-items: center;
             background: #FFFCF1;
-            .icon{
+            .icon {
                 background: #f2f6f2;
                 height: 64px;
                 width: 64px;
@@ -35,18 +35,22 @@
                 font-size: 20px;
                 margin-right: 20px;
             }
-            .card-desc{
+
+            .card-desc {
                 margin-left: 10px;
-                span{
+
+                span {
                     display: block;
-                        font-weight: 500;
-                    &:first-child{
-                    
+                    font-weight: 500;
+
+                    &:first-child {
+
                         font-size: 16px;
                         line-height: 24px;
                         color: #888888;
                     }
-                    &:nth-child(2){
+
+                    &:nth-child(2) {
                         font-size: 32px;
                         line-height: 30px;
                         color: #333333;
@@ -54,5 +58,66 @@
                 }
             }
         }
+    }
+}
+
+@media all and (min-width:320px) and (max-width:575px) {
+    .hero-area .right-img-area .hero-card {
+        position: absolute;
+        top: 10px;
+        right: 5%;
+        padding: 10px 15px;
+    }
+
+    .hero-area .right-img-area .hero-card .icon {
+        height: 34px;
+        width: 34px;
+        font-size: 16px;
+        margin-right: 5px;
+    }
+
+    .hero-area .right-img-area .hero-card .card-desc span:nth-child(2) {
+        font-size: 24px;
+        line-height: 30px;
+    }
+}
+@media all and (min-width:576px) and (max-width:767px) {
+    .hero-area .right-img-area .hero-card {
+        position: absolute;
+        top: 50px;
+        right: 5%;
+        padding: 15px 25px;
+    }
+
+    .hero-area .right-img-area .hero-card .icon {
+        height: 54px;
+        width: 54px;
+        font-size: 20px;
+        margin-right: 5px;
+    }
+
+    .hero-area .right-img-area .hero-card .card-desc span:nth-child(2) {
+        font-size: 26px;
+        line-height: 35px;
+    }
+}
+@media all and (min-width:768px) and (max-width:991px) {
+    .hero-area .right-img-area .hero-card {
+        position: absolute;
+        top: 50px;
+        right: 10%;
+        padding: 15px 20px;
+    }
+
+    .hero-area .right-img-area .hero-card .icon {
+        height: 44px;
+        width: 44px;
+        font-size: 18px;
+        margin-right: 5px;
+    }
+
+    .hero-area .right-img-area .hero-card .card-desc span:nth-child(2) {
+        font-size: 24px;
+        line-height: 30px;
     }
 }
