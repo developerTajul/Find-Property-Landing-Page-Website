@@ -1,7 +1,7 @@
 /*
-  Theme Name: Construction - Clean Construction HTML5 Template
-  Author: nilartstudio
-  Description: Construction  HTML5 Bootstrap 4 template.
+  Theme Name: Find Property Landing Page Website
+  Author: https://www.facebook.com/spellonagency
+  Description: Find Property Landing Page Website  HTML5 Bootstrap 5 template.
   Version: 1.0
 */
 
@@ -9,21 +9,18 @@
 -----------------------------------
 1. Theme default css
 2. header
-3. slider-area
+3. bannar area
 */
-@import 'variable';
+@import 'mixin';
+@import 'variable'; 
+@import 'video-popup';
 @import 'common';
 @import 'header';
-@import 'slider';
-@import 'heading';
-@import 'about-us';
-@import 'contact';
-@import 'services';
-@import 'portfolio';
-@import 'counter';
-@import 'member';
-@import 'promotion';
-@import 'latest-blog';
+@import 'banner';
+@import 'how-work';
+@import 'client';
+@import 'sell-area';
 @import 'feature';
-@import 'widgets';
-@import 'footer';
+
+// components
+@import 'button';
