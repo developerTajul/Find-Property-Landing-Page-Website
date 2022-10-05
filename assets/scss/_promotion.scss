@@ -1,0 +1,41 @@
+/** promotion-area **/
+.promotion-area{
+    background-color: #F1FBFF;
+    position: relative;
+    .promotion-area-bg-left{
+        background: linear-gradient(246.53deg, #26C7FE 0%, #046CF8 98.08%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    .promotion-area-bg{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    .promotion{
+        h2{
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 58px;
+            color: #fff;
+            margin-bottom: 25px;
+        }
+        h3{
+            font-weight: 600;
+            color: #fff;
+            font-size: 28px;
+            line-height: 34px;
+            margin-bottom: 15px;
+        }
+        p{
+            color: #FFFFFF;
+            opacity: 0.85;
+            padding-right: 41px;
+        }
+    }
+}
