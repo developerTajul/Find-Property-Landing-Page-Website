@@ -106,7 +106,9 @@
 			},
 			closeMarkup: '<button title="Close (Esc)" type="button" class="mfp-close"></button>',
 		});
-    	
+    	/*** slick slider  */
+		$('.client-slider').slick();
+		
         // testimonial-active 
         var testimonials__slider;
         testimonials__slider = $('.testimonial-area__slider');
