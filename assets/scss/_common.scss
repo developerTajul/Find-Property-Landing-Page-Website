@@ -1,7 +1,7 @@
 /*** 1. Theme default css */
 body {
   color: $black;
-  background: #F7F4F0;
+  background: $white;
   font: 400 16px/24px $pop;
 }
 
@@ -51,8 +51,7 @@ h4, .h4 { font-size: 36px; line-height: 46px;
   @media screen  and (max-width: 991px) { font-size: 30px; line-height: 40px; }
   @media screen  and (max-width: 767px) { font-size: 25px; line-height: 35px; }
 }
-h5, .h5 { font-size: 28px; line-height: 34px;  
-  @media screen  and (max-width: 991px) { font-size: 25px; line-height: 35px; }
+h5, .h5 { font-size: 24px; line-height: 34px;   
   @media screen  and (max-width: 767px) { font-size: 22px; line-height: 32px; }
 }
 h6, .h6 { font-size: 20px; line-height: 30px; }
@@ -122,3 +121,5 @@ select, textarea {
     outline: 0;
     }
 }
+
+.dark-black { color: $dark_black !important; }

@@ -188,7 +188,7 @@
 /*** 1. Theme default css */
 body {
   color: #000000;
-  background: #F7F4F0;
+  background: #FFF;
   font: 400 16px/24px "Poppins", sans-serif; }
 
 img {
@@ -273,12 +273,8 @@ h4, .h4 {
       line-height: 35px; } }
 
 h5, .h5 {
-  font-size: 28px;
+  font-size: 24px;
   line-height: 34px; }
-  @media screen and (max-width: 991px) {
-    h5, .h5 {
-      font-size: 25px;
-      line-height: 35px; } }
   @media screen and (max-width: 767px) {
     h5, .h5 {
       font-size: 22px;
@@ -433,6 +429,9 @@ select, textarea {
   select:hover,
   select:focus, textarea:hover, textarea:focus {
     outline: 0; }
+
+.dark-black {
+  color: #363636 !important; }
 
 .scroll-down .header:not(.sticky) {
   -webkit-transform: translate3d(0, -100%, 0);
@@ -725,6 +724,25 @@ select, textarea {
       box-shadow: 0 0 7px 0px #0000003b; }
       .banner-area__content .theme-btn.popup-video span i {
         margin: 0; }
+
+.how-work .minus {
+  margin-bottom: -30px; }
+@media screen and (max-width: 480px) {
+  .how-work .row > [class*="col-6"] {
+    width: 100% !important; } }
+.how-work__item {
+  height: calc(100% - 30px);
+  box-shadow: 0px 4px 9px 0px #0000003b; }
+  .how-work__item p {
+    max-width: 330px;
+    margin-left: auto;
+    color: #363636;
+    margin-right: auto; }
+  .how-work__item a {
+    font-weight: 700;
+    color: #363636; }
+    .how-work__item a:hover, .how-work__item a:focus {
+      color: #0155D9; }
 
 .theme-btn {
   color: #FFF;
