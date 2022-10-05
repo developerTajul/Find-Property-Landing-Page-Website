@@ -777,6 +777,105 @@ select, textarea {
       float: none !important;
       display: table-cell !important; }
 
+.sell-area__list ul {
+  gap: 20px;
+  display: flex; }
+  .sell-area__list ul li {
+    cursor: pointer;
+    position: relative; }
+    .sell-area__list ul li:before {
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 50%;
+      height: 2px;
+      content: '';
+      position: absolute;
+      background-color: #0155D9;
+      -webkit-transform: scaleX(0);
+      -moz-transform: scaleX(0);
+      -ms-transform: scaleX(0);
+      -o-transform: scaleX(0);
+      transform: scaleX(0);
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+    .sell-area__list ul li.active, .sell-area__list ul li:hover, .sell-area__list ul li:focus {
+      color: #0155D9; }
+      .sell-area__list ul li.active:before, .sell-area__list ul li:hover:before, .sell-area__list ul li:focus:before {
+        -webkit-transform: scaleX(1);
+        -moz-transform: scaleX(1);
+        -ms-transform: scaleX(1);
+        -o-transform: scaleX(1);
+        transform: scaleX(1); }
+.sell-area__form {
+  gap: 30px; }
+  .sell-area__form-wrapper {
+    box-shadow: -1px 9px 14px 0px #0000003b; }
+    .sell-area__form-wrapper .form-group {
+      z-index: 1;
+      position: relative; }
+      .sell-area__form-wrapper .form-group label {
+        font-weight: 700;
+        margin-bottom: 10px; }
+        @media screen and (max-width: 575px) {
+          .sell-area__form-wrapper .form-group label {
+            margin-bottom: 5px; } }
+      .sell-area__form-wrapper .form-group select {
+        display: inherit;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        font-size: 14px !important;
+        line-height: 24px !important;
+        padding: 0 18px 0 0 !important;
+        background-size: 15px !important;
+        background-repeat: no-repeat !important;
+        background-position-x: 99% !important;
+        background-position-y: 5px !important;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3C!--! Font Awesome Pro 6.2.0 by %40fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons  Inc. --%3E%3Cpath d='M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z'/%3E%3C/svg%3E") !important; }
+    .sell-area__form-wrapper i {
+      font-size: 15px;
+      line-height: 25px; }
+    .sell-area__form-wrapper .theme-btn {
+      background-color: #000000; }
+      .sell-area__form-wrapper .theme-btn:hover, .sell-area__form-wrapper .theme-btn:focus {
+        background-color: #0155D9; }
+    .sell-area__form-wrapper input[type="submit"] {
+      color: #FFF;
+      font-size: 17px;
+      font-weight: 500;
+      line-height: 26px;
+      border: 0 !important;
+      display: inline-block;
+      text-decoration: none;
+      background-color: #000000;
+      text-transform: capitalize;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      border-radius: 5px;
+      -webkit-backface-visibility: hidden;
+      -moz-backface-visibility: hidden;
+      -webkit-transform: translate3d(0, 0, 0);
+      -moz-transform: translate3d(0, 0, 0);
+      padding: 15px 30px;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+      @media screen and (max-width: 991px) {
+        .sell-area__form-wrapper input[type="submit"] {
+          font-size: 15px;
+          line-height: 23px;
+          padding: 10px 20px; } }
+      .sell-area__form-wrapper input[type="submit"]:hover, .sell-area__form-wrapper input[type="submit"]:focus {
+        box-shadow: none;
+        color: #FFF;
+        background-color: #0155D9; }
+
 .theme-btn {
   color: #FFF;
   font-size: 17px;
