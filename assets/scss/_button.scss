@@ -8,6 +8,11 @@
     border-radius: 10px;
     border: 1px solid transparent;
     transition: all ease-in-out 0.4s;
+
+    i {
+        display: inline-block;
+        margin-left: 5px;
+    }
 }
 
 .theme-btn-dark {
@@ -19,4 +24,17 @@
         color: #333333;
         border-color: #333333;
     }
+}
+
+.theme-btn-light {
+
+    background: #fff;
+    color: #333333;
+    border-color: #333333;
+
+    &:hover {
+        background: transparent;
+        color: #fff;
+    }
+
 }

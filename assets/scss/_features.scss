@@ -1,0 +1,37 @@
+.features-area {
+    .feature-card {
+        border-radius: 16px;
+        position: relative;
+        .icon {
+            height: 92px;
+            width: 92px;
+
+           img{
+            height: 100%;
+            width: 100%;
+           }
+        }
+        .arrow{
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            .arrow-icon{
+                height: 48px;
+                width: 48px;
+                border-radius: 50%;
+                border: 1px solid #3333339e;
+                color: #333333;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transform: rotate(35deg);
+                transition: all ease-in-out 0.4s;
+                &:hover{
+                    background: #333333;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

@@ -23,7 +23,8 @@ body {
 }
 
 a,
-.button, button {
+.button,
+button {
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
   -ms-transition: all 0.3s ease-out 0s;
@@ -72,7 +73,7 @@ h4,
 h5,
 h6 {
   font-weight: 500;
-  color: #222222;
+  color: #333333;
   margin-bottom: 0;
   line-height: 1.15;
 }
@@ -89,15 +90,17 @@ h6 a {
 h1 {
   font-size: 64px;
   line-height: 80px;
-  color: #333333;
 }
 
 h2 {
-  font-size: 35px;
+  font-size: 52px;
+  line-height: 79px;
+  font-weight: 600;
 }
 
 h3 {
   font-size: 28px;
+  line-height: 42px;
 }
 
 h4 {
@@ -175,6 +178,10 @@ label {
 
 .theme-bg {
   background-color: #F5FAFF;
+}
+
+.theme-bg-black {
+  background: #000000;
 }
 
 .theme-bg-dark {
@@ -474,6 +481,56 @@ label {
   color: #333333;
 }
 
+.features-area .feature-card {
+  border-radius: 16px;
+  position: relative;
+}
+.features-area .feature-card .icon {
+  height: 92px;
+  width: 92px;
+}
+.features-area .feature-card .icon img {
+  height: 100%;
+  width: 100%;
+}
+.features-area .feature-card .arrow {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.features-area .feature-card .arrow .arrow-icon {
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  border: 1px solid rgba(51, 51, 51, 0.6196078431);
+  color: #333333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(35deg);
+  transition: all ease-in-out 0.4s;
+}
+.features-area .feature-card .arrow .arrow-icon:hover {
+  background: #333333;
+  color: #fff;
+}
+
+.cta-area .cta-inner .cta-content-area .cta-title h2 {
+  color: #fff;
+  font-weight: 600;
+  font-size: 53px;
+  line-height: 75px;
+  text-transform: capitalize;
+}
+.cta-area .cta-outer {
+  position: relative;
+}
+.cta-area .cta-outer .left-img {
+  position: absolute;
+  top: -100px;
+}
+
 /** footer-area  **/
 .footer-area {
   overflow: hidden;
@@ -504,6 +561,10 @@ label {
   border: 1px solid transparent;
   transition: all ease-in-out 0.4s;
 }
+.theme-btn i {
+  display: inline-block;
+  margin-left: 5px;
+}
 
 .theme-btn-dark {
   background: #333333;
@@ -513,6 +574,16 @@ label {
   background: #fff;
   color: #333333;
   border-color: #333333;
+}
+
+.theme-btn-light {
+  background: #fff;
+  color: #333333;
+  border-color: #333333;
+}
+.theme-btn-light:hover {
+  background: transparent;
+  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */

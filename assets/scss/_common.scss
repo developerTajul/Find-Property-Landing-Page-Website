@@ -1,27 +1,35 @@
 /* 1. Theme default css */
- body {
+body {
   font-family: 'Roboto', sans-serif;
   font-weight: normal;
   font-style: normal;
 }
+
 .img {
   max-width: 100%;
   transition: all 0.3s ease-out 0s;
 }
+
 a,
-.button,button {
+.button,
+button {
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
   -ms-transition: all 0.3s ease-out 0s;
   -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
 }
+
 a:focus,
 .button:focus {
   text-decoration: none;
   outline: none;
 }
-button{cursor: pointer}
+
+button {
+  cursor: pointer
+}
+
 a:focus,
 a:hover,
 .portfolio-cat a:hover,
@@ -29,19 +37,23 @@ a:hover,
   color: #FBBA42;
   text-decoration: none;
 }
+
 a,
 button {
   color: #1696e7;
   outline: medium none;
 }
+
 input:focus,
 textarea:focus,
-:focus{
+:focus {
   outline: 0
 }
+
 button:focus {
   outline: 0 none;
 }
+
 h1,
 h2,
 h3,
@@ -49,11 +61,12 @@ h4,
 h5,
 h6 {
 
-    font-weight: 500;
-    color: #222222;
-    margin-bottom:0;
-    line-height: 1.15;
+  font-weight: 500;
+  color: #333333;
+  margin-bottom: 0;
+  line-height: 1.15;
 }
+
 h1 a,
 h2 a,
 h3 a,
@@ -62,33 +75,46 @@ h5 a,
 h6 a {
   color: inherit;
 }
+
 h1 {
   font-size: 64px;
   line-height: 80px;
-  color: #333333;
+
 }
+
 h2 {
-  font-size: 35px;
+  font-size: 52px;
+  line-height: 79px;
+  font-weight: 600;
+
 }
+
 h3 {
   font-size: 28px;
+  line-height: 42px;
 }
+
 h4 {
   font-size: 22px;
 }
+
 h5 {
   font-size: 18px;
 }
+
 h6 {
   font-size: 16px;
 }
+
 ul {
   margin: 0px;
   padding: 0px;
 }
+
 li {
   list-style: none
 }
+
 p {
   font-size: 16px;
   font-weight: 400;
@@ -96,38 +122,45 @@ p {
   color: #888888;
   margin-bottom: 0;
 }
+
 hr {
   border-bottom: 1px solid #eceff8;
   border-top: 0 none;
   margin: 30px 0;
   padding: 0;
 }
+
 label {
   color: #7e7e7e;
   cursor: pointer;
   font-size: 14px;
   font-weight: 400;
 }
+
 *::-moz-selection {
   background: #d6b161;
   color: #fff;
   text-shadow: none;
 }
+
 ::-moz-selection {
   background: #444;
   color: #fff;
   text-shadow: none;
 }
+
 ::selection {
   background: #444;
   color: #fff;
   text-shadow: none;
 }
+
 *::-moz-placeholder {
   color: #555555;
   font-size: 14px;
   opacity: 1;
 }
+
 *::placeholder {
   color: #555555;
   font-size: 14px;
@@ -135,10 +168,14 @@ label {
 }
 
 
-.theme-bg{
-  background-color:  #F5FAFF;
+.theme-bg {
+  background-color: #F5FAFF;
+}
+.theme-bg-black{
+  background:#000000;
 }
 
-.theme-bg-dark{
-  background-color:  #133460;;
+.theme-bg-dark {
+  background-color: #133460;
+  ;
 }

@@ -1,0 +1,24 @@
+.cta-area{
+    .cta-inner{
+        .cta-content-area{
+            .cta-title{
+                h2{
+                    color: #fff;
+                    font-weight: 600;
+                    font-size: 53px;
+                    line-height: 75px;
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
+    // outer area
+
+    .cta-outer{
+        position: relative;
+        .left-img{
+            position: absolute;
+            top: -100px;
+        }
+    }
+}
