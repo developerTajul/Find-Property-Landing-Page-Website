@@ -1034,6 +1034,76 @@ select, textarea {
         .cta-area__wrapper .form-group input[type="submit"] i, .cta-area__wrapper .form-group .theme-btn i {
           margin: 0; }
 
+.team-area {
+  z-index: 1;
+  position: relative; }
+  .team-area:after {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+    content: "";
+    height: 150px;
+    position: absolute;
+    background-color: #F7FBFE; }
+  .team-area .minus {
+    margin-bottom: -30px; }
+  .team-area__item {
+    overflow: hidden;
+    position: relative;
+    background-color: #FFF;
+    border: 1px solid #E9F3F5;
+    border-radius: 500px 500px 10px 10px;
+    -webkit-transition: border-radius 0.8s;
+    -moz-transition: border-radius 0.8s;
+    -ms-transition: border-radius 0.8s;
+    -o-transition: border-radius 0.8s;
+    transition: border-radius 0.8s; }
+    .team-area__item .media .img-wrppaer {
+      width: 196px;
+      height: 196px;
+      max-width: 100%;
+      overflow: hidden;
+      -webkit-border-radius: 500px;
+      -moz-border-radius: 500px;
+      -ms-border-radius: 500px;
+      border-radius: 500px;
+      -webkit-backface-visibility: hidden;
+      -moz-backface-visibility: hidden;
+      -webkit-transform: translate3d(0, 0, 0);
+      -moz-transform: translate3d(0, 0, 0); }
+      .team-area__item .media .img-wrppaer img {
+        width: 100%;
+        height: auto;
+        object-fit: cover; }
+    .team-area__item .media i {
+      top: 35%;
+      z-index: 1;
+      right: 45px;
+      position: absolute; }
+      @media screen and (max-width: 1199px) {
+        .team-area__item .media i {
+          right: 35px; } }
+      @media screen and (max-width: 991px) {
+        .team-area__item .media i {
+          right: 30px; } }
+    .team-area__item .text span {
+      font-size: 14px;
+      color: #75767B;
+      line-height: 24px; }
+    .team-area__item .text a {
+      text-decoration: none; }
+      .team-area__item .text a.phone {
+        color: #000000; }
+        .team-area__item .text a.phone:hover, .team-area__item .text a.phone:focus {
+          color: #0155D9; }
+      .team-area__item .text a.gmail {
+        color: #0155D9; }
+        .team-area__item .text a.gmail:hover, .team-area__item .text a.gmail:focus {
+          color: #000000; }
+    .team-area__item:hover, .team-area__item:focus {
+      border-radius: 10px; }
+
 .theme-btn {
   color: #FFF;
   font-size: 17px;
