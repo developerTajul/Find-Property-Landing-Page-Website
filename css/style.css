@@ -433,6 +433,9 @@ select, textarea {
 .dark-black {
   color: #363636 !important; }
 
+.color-white {
+  color: #FFF !important; }
+
 .scroll-down .header:not(.sticky) {
   -webkit-transform: translate3d(0, -100%, 0);
   -moz-transform: translate3d(0, -100%, 0);
@@ -1030,7 +1033,15 @@ select, textarea {
         font-size: 17px;
         font-weight: 500;
         line-height: 26px;
-        padding: 15px 25px; }
+        padding: 15px 25px;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        border-radius: 0;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0); }
         .cta-area__wrapper .form-group input[type="submit"] i, .cta-area__wrapper .form-group .theme-btn i {
           margin: 0; }
 
@@ -1103,6 +1114,100 @@ select, textarea {
           color: #000000; }
     .team-area__item:hover, .team-area__item:focus {
       border-radius: 10px; }
+
+.categories-area {
+  background-color: #F6FBFE; }
+  @media screen and (max-width: 480px) {
+    .categories-area .row > [class*="col"] {
+      width: 100% !important; } }
+  .categories-area__item {
+    z-index: 1;
+    position: relative;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0); }
+    .categories-area__item .media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+    .categories-area__item .text {
+      top: 0;
+      left: 0;
+      z-index: 99;
+      height: 100%;
+      position: absolute; }
+      .categories-area__item .text .number {
+        color: #FF504A;
+        font-size: 14px;
+        line-height: 20px;
+        overflow: hidden;
+        padding: 5px 15px;
+        position: relative;
+        background-color: #FFF;
+        -webkit-border-radius: 500px;
+        -moz-border-radius: 500px;
+        -ms-border-radius: 500px;
+        border-radius: 500px;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0); }
+
+.categories-slider {
+  margin-bottom: 0 !important; }
+  .categories-slider .slick-list {
+    margin-left: 0;
+    margin-right: 0; }
+    .categories-slider .slick-list .slick-track {
+      height: 100%; }
+      .categories-slider .slick-list .slick-track .slick-slide {
+        padding-left: 15px;
+        padding-right: 15px;
+        float: left !important; }
+
+.slider-controls {
+  position: inherit !important; }
+  .slider-controls .slider-arrows {
+    gap: 15px; }
+    .slider-controls .slider-arrows .categories-slider__arrow {
+      width: 80px;
+      height: 80px;
+      cursor: pointer;
+      color: #FFF;
+      font-size: 22px;
+      line-height: 80px;
+      text-align: center;
+      background: #0155D9;
+      border-radius: 500px;
+      border: 1px solid #0155D9;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+      @media all and (max-width: 767px) {
+        .slider-controls .slider-arrows .categories-slider__arrow {
+          width: 60px;
+          height: 60px;
+          line-height: 60px;
+          font-size: 18px; } }
+      .slider-controls .slider-arrows .categories-slider__arrow:hover {
+        color: #000000;
+        background: #FFF;
+        border-color: #000000; }
+      .slider-controls .slider-arrows .categories-slider__arrow.categories-slider__arrow_left {
+        color: #000000;
+        background: #FFF;
+        border-color: #000000; }
+        .slider-controls .slider-arrows .categories-slider__arrow.categories-slider__arrow_left:hover {
+          background: #0155D9 !important;
+          color: #FFF !important;
+          border-color: #0155D9 !important; }
 
 .theme-btn {
   color: #FFF;
