@@ -159,6 +159,24 @@
 			]
 		})
 
+		// testimonial-active 
+        var testimonials__slider;
+        testimonials__slider = $('.testimonial-area__slider');
+
+        testimonials__slider.slick({
+            dots: false, 
+            speed: 300,
+            arrows: true,
+            autoplay: false,
+            slidesToShow: 1,
+            infinite: true,
+            slidesToScroll: 1,
+            autoplaySpeed: 500,
+            dotsClass: "slick-dots list-inline",
+            prevArrow: '<div class="testimonial__arrow testimonial__arrow_left"><i class="fa-solid fa-arrow-left-long"></i></div>',
+        	nextArrow: '<div class="testimonial__arrow testimonial__arrow_right"><i class="fa-solid fa-arrow-right-long"></i></div>', 
+        }); 
+
         /** counter **/
         $('.counter').counterUp({
             delay: 10,
